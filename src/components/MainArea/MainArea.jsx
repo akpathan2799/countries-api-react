@@ -77,7 +77,7 @@ const MainArea = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" className=" fill-black dark:fill-white bi bi-search" viewBox="0 0 16 16">
                 <path  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
               </svg>
-              <input aria-label="Search Country" onChange={(e)=>setSearch(e.target.value)} type='text' placeholder='Search Country' className='w-full bg-transparent outline-none text-xl font-medium placeholder-black dark:placeholder-white'/>
+              <input aria-label="Search Country" onChange={(e)=>setSearch(e.target.value)} type='text' placeholder='Search Country' className='w-full bg-transparent outline-none text-xl font-medium text-black placeholder-black dark:placeholder-white dark:text-white'/>
             </div>
   
             <select aria-label="Filter by region" onChange={(e)=> setFilter(e.target.value)} className='w-full md:w-auto border-2 border-black dark:border-none outline-none py-5 px-5 mt-4 md:mt-0 rounded-md text-xl text-black font-medium dark:text-white bg-white dark:bg-slate-600 '>
