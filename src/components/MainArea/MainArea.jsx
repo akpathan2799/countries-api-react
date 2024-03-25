@@ -91,7 +91,7 @@ const MainArea = () => {
   
           </div>
   
-          <div className='flex flex-wrap justify-between gap-7 mt-9 max-w-screen-lg m-auto' >
+          <div className='flex flex-wrap justify-between gap-7 mt-9 max-w-screen-lg m-auto w-full' >
   
             {countries.map((country)=>(
                 <CountryCard  
