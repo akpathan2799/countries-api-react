@@ -81,7 +81,7 @@ const MainArea = () => {
             </div>
   
             <select aria-label="Filter by region" onChange={(e)=> setFilter(e.target.value)} className='w-full md:w-auto border-2 border-black dark:border-none outline-none py-5 px-5 mt-4 md:mt-0 rounded-md text-xl text-black font-medium dark:text-white bg-white dark:bg-slate-600 '>
-              <option disabled hidden >Filter by region</option>
+              <option >Filter by region</option>
               <option value='africa' className='text-xl py-2 rounded-sm'>Africa</option>
               <option value='oceania' className='text-xl py-2 rounded-sm'>Oceania</option>
               <option value='europe' className='text-xl py-2 rounded-sm'>Europe</option>
