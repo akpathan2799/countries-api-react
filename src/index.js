@@ -1,13 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import Layout from './Layout';
+import MainArea from './components/MainArea/MainArea';
+import CountryDetails from './components/CountryDetails/CountryDetails';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Layout/>,
+    children:[
+      {
+        path:'',
+        element:<MainArea/>,
+        errorElement:<ErrorPage/>
+      },
+      {
+        path:'/country/:countryname',
+        element:<CountryDetails/>
+      }
+    ]
+  }
+])
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
